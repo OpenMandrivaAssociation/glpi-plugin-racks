@@ -1,5 +1,5 @@
 %define name glpi-plugin-racks
-%define version 1.0.3
+%define version 1.1.0
 %define release %mkrel 1
 
 Summary: SNMP agent plugin
@@ -9,7 +9,7 @@ Release: %{release}
 License: GPL
 Group: Monitoring
 Url: http://forge.indepnet.net/projects/show/racks
-Source0: https://forge.indepnet.net/attachments/download/547/glpi-rack-%{version}.tar.gz
+Source0: https://forge.indepnet.net/attachments/download/547/glpi-racks-%{version}.tar.gz
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}
 
@@ -19,21 +19,19 @@ in your bays. And so know the space and its power consumption and heat
 dissipation.
 
 %prep
-%setup -q -n rack
+%setup -q -n racks
 find . -type f | xargs chmod 644
 find . -type d | xargs chmod 755
 
 %install
 rm -rf %{buildroot}
 
-install -d -m 755 %{buildroot}%{_datadir}/glpi/plugins/rack
-cp -ap * %{buildroot}%{_datadir}/glpi/plugins/rack
-rm -f %{buildroot}%{_datadir}/glpi/plugins/racks/todo.txt
+install -d -m 755 %{buildroot}%{_datadir}/glpi/plugins/racks
+cp -ap * %{buildroot}%{_datadir}/glpi/plugins/racks
 
 %clean
 rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
-%doc todo.txt
-%{_datadir}/glpi/plugins/rack
+%{_datadir}/glpi/plugins/racks
