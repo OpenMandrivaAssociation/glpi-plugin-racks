@@ -1,5 +1,5 @@
 %define name glpi-plugin-racks
-%define version 1.1.0
+%define version 1.2.0
 %define release %mkrel 1
 
 Summary: SNMP agent plugin
@@ -9,7 +9,7 @@ Release: %{release}
 License: GPL
 Group: Monitoring
 Url: http://forge.indepnet.net/projects/show/racks
-Source0: https://forge.indepnet.net/attachments/download/547/glpi-racks-%{version}.tar.gz
+Source0: https://forge.indepnet.net/attachments/download/883/glpi-racks-%{version}.tar.gz
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}
 
