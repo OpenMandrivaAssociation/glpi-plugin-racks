@@ -11,7 +11,7 @@ Version: 1.2.0
 Release: %{release}
 License: GPL
 Group: Monitoring
-URL: http://forge.indepnet.net/projects/show/racks
+URL: https://forge.indepnet.net/projects/show/racks
 Source0: https://forge.indepnet.net/attachments/download/883/glpi-racks-%{version}.tar.gz
 BuildArch: noarch
 
